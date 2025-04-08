@@ -231,11 +231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Talha Emin\\Desktop\\Bot\\RabbitMQProducerAPI\\RabbitMQProducerAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Talha Emin\\Documents\\GitHub\\My-Orders-App\\RabbitMQProducerAPI\\RabbitMQProducerAPI.csproj",
       "projectName": "RabbitMQProducerAPI",
-      "projectPath": "C:\\Users\\Talha Emin\\Desktop\\Bot\\RabbitMQProducerAPI\\RabbitMQProducerAPI.csproj",
+      "projectPath": "C:\\Users\\Talha Emin\\Documents\\GitHub\\My-Orders-App\\RabbitMQProducerAPI\\RabbitMQProducerAPI.csproj",
       "packagesPath": "C:\\Users\\Talha Emin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Talha Emin\\Desktop\\Bot\\RabbitMQProducerAPI\\obj\\",
+      "outputPath": "C:\\Users\\Talha Emin\\Documents\\GitHub\\My-Orders-App\\RabbitMQProducerAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

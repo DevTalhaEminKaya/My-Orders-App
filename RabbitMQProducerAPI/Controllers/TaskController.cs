@@ -8,14 +8,13 @@ namespace RabbitMQProducerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MessageController : ControllerBase
+    public class TaskController : ControllerBase
     {
         [HttpPost("{website}/{username}/{password}")]
-        public IActionResult Trendyol()
+        public IActionResult Trendyol(string website, string username, string password)
         {
             try
             {
-                // Bağlantıyı RabbitMQ'ya bağla
                 var factory = new ConnectionFactory() { HostName = "localhost" };
 
                 using var connection = factory.CreateConnection();
@@ -29,7 +28,7 @@ namespace RabbitMQProducerAPI.Controllers
 
                 var message = new
                 {
-                    Website = website
+                    Website = website,
                     Username = username, 
                     Password = password
                 };
@@ -42,7 +41,7 @@ namespace RabbitMQProducerAPI.Controllers
                                      basicProperties: null,
                                      body: body);
 
-                return Ok($"Mesaj kuyruğa eklendi: {task}");
+                return Ok($"İstek kuyruğa eklendi: {website}");
             }
             catch (Exception ex)
             {
